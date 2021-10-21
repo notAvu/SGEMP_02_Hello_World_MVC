@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    Hola, son las: @DateTime.Now.TimeOfDay
+    @if (DateTime.Now.Minute >= 0 && DateTime.Now.Hour >= 12)
+    {<a>Han pasado las 12</a>}
+    else
+    {<a>NO Han pasado las 12</a>}
+</body>
+</html>

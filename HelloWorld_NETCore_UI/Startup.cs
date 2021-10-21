@@ -23,6 +23,8 @@ namespace HelloWorld_NETCore_UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddMvc(options=>options.EnableEndpointRouting=false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +38,10 @@ namespace HelloWorld_NETCore_UI
             {
                 app.UseExceptionHandler("/Error");
             }
+
+            app.UseMvc();
+
+            app.UseMvcWithDefaultRoute();
 
             app.UseStaticFiles();
 
