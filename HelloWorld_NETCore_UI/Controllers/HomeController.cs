@@ -10,7 +10,15 @@ namespace HelloWorld_NETCore_UI.Controllers
     {
         public IActionResult Index()
         {
-            return View("Index");
+            return View();
+        }
+        public ActionResult ProductList() 
+        {
+            return View();
+        }
+        public ActionResult Ejercicio4()
+        {
+            return View();
         }
     }
 }

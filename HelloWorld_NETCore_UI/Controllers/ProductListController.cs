@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelloWorld_NETCore_UI.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductListController : Controller
     {
         public IActionResult Index()
         {
