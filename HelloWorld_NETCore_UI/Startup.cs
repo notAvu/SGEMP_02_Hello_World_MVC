@@ -1,3 +1,5 @@
+using DocumentFormat.OpenXml.ExtendedProperties;
+using DocumentFormat.OpenXml.Presentation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,7 +26,7 @@ namespace HelloWorld_NETCore_UI
         {
             services.AddRazorPages();
 
-            services.AddMvc(options=>options.EnableEndpointRouting=false);
+            services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,9 +41,10 @@ namespace HelloWorld_NETCore_UI
                 app.UseExceptionHandler("/Error");
             }
 
-            app.UseMvc({ routes =>
-                 routes.MapRoute(name: "default",
-                 template: "{controller=Home}/{action=Index}/{id?}"});
+            app.UseMvc(
+                routes => routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}"));
 
             app.UseMvcWithDefaultRoute();
 
