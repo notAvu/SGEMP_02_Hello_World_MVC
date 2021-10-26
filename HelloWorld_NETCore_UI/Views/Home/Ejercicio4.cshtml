@@ -12,14 +12,14 @@
 </head>
 <body>
     <table border="1" cellpadding="2">
-        @for (var m = 1; m < 10; m++)
+        @for (var j = 1; j < 10; j++)
         {
             <tr>
                 @for (var i = 1; i < 10; i++)
 
                 {
-                    var x = @i * @m;
-                    <td>@m x @i= (x)</td>
+                    var x = @i * @j;
+                    <td>@j x @i= (x)</td>
                 }
             </tr>
         }
