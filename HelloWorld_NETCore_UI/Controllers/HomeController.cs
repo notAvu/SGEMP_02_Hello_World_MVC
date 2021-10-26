@@ -14,7 +14,7 @@ namespace HelloWorld_NETCore_UI.Controllers
         }
         public ActionResult ProductList() 
         {
-            return View();
+            return View("../Products/ProductList");
         }
         public ActionResult Ejercicio4()
         {

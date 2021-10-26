@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Ejercicios\**" />
+    <Content Remove="Views\Ejercicios\**" />
+    <EmbeddedResource Remove="Views\Ejercicios\**" />
+    <None Remove="Views\Ejercicios\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Ejercicios\" />
   </ItemGroup>
 
   <ItemGroup>
