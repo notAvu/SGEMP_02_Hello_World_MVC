@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -11,14 +10,14 @@
     <title>Index</title>
 </head>
 <body>
-    Hola, son las: @DateTime.Now.TimeOfDay
+    Hola, son las: @DateTime.Now.ToShortTimeString();
     @if (DateTime.Now.Minute >= 0 && DateTime.Now.Hour >= 12)
     {<a>Han pasado las 12</a>}
     else
     {<a>NO Han pasado las 12</a>}
-
+    <br/>
     @Html.ActionLink("Lista de Productos", "ProductList", "Home");
-
+    <br/>
     @Html.ActionLink("Tabla", "Ejercicio4", "Home");
 </body>
 </html>
