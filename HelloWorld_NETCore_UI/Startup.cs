@@ -44,7 +44,7 @@ namespace HelloWorld_NETCore_UI
             app.UseMvc(
                 routes => routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}"));
+                    template: "{controller=Home}/{action=Index}/{id?}"));//si hay que ponerlo, aqui o en endpoints (se genera con el MVC)
 
             app.UseMvcWithDefaultRoute();
 
